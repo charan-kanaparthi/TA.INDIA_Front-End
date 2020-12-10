@@ -1,0 +1,32 @@
+.example-container {
+    position: absolute;
+    top: 53px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+   
+  }
+  .side-nav{
+    position: absolute;
+    
+    width: 180px;
+    border-right: 3px solid #3f51b5;;
+  
+  }
+
+  .side-nav-content{
+    padding: 10px;
+  }
+  .is-active {
+    background-color: #3f51b5;
+    color: white;
+}
+.mat-list-item:hover{
+    background-color: #3f51b5 ;
+    color: white ;
+  }
+  .is-active:hover {
+    font-weight: bold;
+    background-color: white;
+    color: #3f51b5;
+  }

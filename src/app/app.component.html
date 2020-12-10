@@ -1,0 +1,17 @@
+<!-- Toolbar -->
+<mat-toolbar color="primary" class="app-header">
+  <div><a href="" target="_blank" class="">  </a>TA.INDIA </div>
+  <span class="nav-tool-items" *ngIf="!currentUser">
+    <a mat-button routerLink="login" routerLinkActive="active">Log in</a>
+    <a mat-button routerLink="register" routerLinkActive="active">Register</a>
+    
+  </span>
+  <span class="nav-tool-items" *ngIf="currentUser">
+    <a mat-button (click)="logout()">Log out</a>
+    <!-- <a mat-button routerLink="register" routerLinkActive="active">Register</a> -->
+    
+  </span>
+
+</mat-toolbar>
+
+<router-outlet></router-outlet>
